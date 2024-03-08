@@ -3,4 +3,4 @@
 
 <h4> All Images are made using figma </h4>
 
-[](/image/bg-image.jpg)
+![background image](/image/bg-image.jpg)
