@@ -3,3 +3,4 @@
 
 <h4> All Images are made using figma </h4>
 
+![background-image](Super Tic Tac Toe/image/bg-image.jpg)
