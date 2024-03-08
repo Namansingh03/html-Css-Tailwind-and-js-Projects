@@ -1,0 +1,724 @@
+<!-- npx tailwindcss -i ./src/style.css -o ./dist/output.css --watch -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Tic Tac Toe</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body
+    class="w-full h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat bg-game-img"
+  >
+  <!-- congratulation msg starts-->
+    <div
+      class="md:mt-[2%] md:ml-[2%] md:text-6xl font-bold text-paleYellow md:h-[19%] md:w-[32vw] text-xl w-[9vw] h-auto hidden" id="msg"
+    >
+      <h1>Congrats You Won!</h1>
+    </div>
+    <!-- congratulation msg ends-->
+
+    <div
+      class="md:w-[50%] h-[100%] w-[90%] flex flex-col  items-center justify-center gap-2"
+    >
+
+    <!-- name of game  -->
+      <h1 class="mb-[12px] text-5xl font-bold text-maroonX text-underline" >
+        Super Tic Tac Toe
+      </h1>
+    <!-- name of game  -->
+
+
+    
+    <!-- main game starts -->
+      <div
+        class="md:w-[70%] md:h-[65%] w-[80vw] h-[70vh] flex justify-evenly flex-wrap border-paleYellow border-[10px] content-center flex-col rounded-lg "
+      >
+        <!-- selection box starts -->
+
+        <!-- section box 1 -->
+        <div
+          class="md:w-[32%] md:h-[32%] w-[32%] h-[32%] bg-maroonX flex justify-evenly flex-wrap flex-row content-center m-[2px] font-semibold text-4xl select"
+          id="selection-box-1" 
+        >
+          <!-- // choice boxes -->
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif   box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md: m-[2px] m-[1px]] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id=""  
+          >
+          
+          </button>
+          
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id=""  
+          >
+           
+          </button>
+          <!-- // choice boxes -->
+
+        <!-- selection box -->
+      </div>
+        <!-- section box 2 -->
+        <div
+          class="md:w-[32%] md:h-[32%] w-[32%] h-[32%] bg-maroonX flex justify-evenly flex-wrap flex-row content-center m-[2px] font-semibold text-4xl select"
+          id="selection-box-2" 
+        >
+          <!-- // choice boxes -->
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif   box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md: m-[2px] m-[1px]] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id=""  
+          >
+          
+          </button>
+          
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id=""  
+          >
+           
+          </button>
+          <!-- // choice boxes -->
+
+        <!-- selection box -->
+      </div>
+        <!-- section box 3 -->
+        <div
+          class="md:w-[32%] md:h-[32%] w-[32%] h-[32%] bg-maroonX flex justify-evenly flex-wrap flex-row content-center m-[2px] font-semibold text-4xl select"
+          id="selection-box-3" 
+        >
+          <!-- // choice boxes -->
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif   box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md: m-[2px] m-[1px]] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id=""  
+          >
+          
+          </button>
+          
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id=""  
+          >
+           
+          </button>
+          <!-- // choice boxes -->
+
+        <!-- selection box -->
+      </div>
+        <!-- section box 4 -->
+        <div
+          class="md:w-[32%] md:h-[32%] w-[32%] h-[32%] bg-maroonX flex justify-evenly flex-wrap flex-row content-center m-[2px] font-semibold text-4xl select"
+          id="selection-box-4" 
+        >
+          <!-- // choice boxes -->
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif   box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md: m-[2px] m-[1px]] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id=""  
+          >
+          
+          </button>
+          
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id=""  
+          >
+           
+          </button>
+          <!-- // choice boxes -->
+
+        <!-- selection box -->
+      </div>
+        <!-- section box 5 -->
+        <div
+          class="md:w-[32%] md:h-[32%] w-[32%] h-[32%] bg-maroonX flex justify-evenly flex-wrap flex-row content-center m-[2px] font-semibold text-4xl select"
+          id="selection-box-5" 
+        >
+          <!-- // choice boxes -->
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif   box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md: m-[2px] m-[1px]] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id=""  
+          >
+          
+          </button>
+          
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id=""  
+          >
+           
+          </button>
+          <!-- // choice boxes -->
+
+        <!-- selection box -->
+      </div>
+        <!-- section box 6 -->
+        <div
+          class="md:w-[32%] md:h-[32%] w-[32%] h-[32%] bg-maroonX flex justify-evenly flex-wrap flex-row content-center m-[2px] font-semibold text-4xl select"
+          id="selection-box-6" 
+        >
+          <!-- // choice boxes -->
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif   box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md: m-[2px] m-[1px]] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id=""  
+          >
+          
+          </button>
+          
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id=""  
+          >
+           
+          </button>
+          <!-- // choice boxes -->
+
+        <!-- selection box -->
+      </div>
+        <!-- section box 7 -->
+        <div
+          class="md:w-[32%] md:h-[32%] w-[32%] h-[32%] bg-maroonX flex justify-evenly flex-wrap flex-row content-center m-[2px] font-semibold text-4xl select"
+          id="selection-box-7" 
+        >
+          <!-- // choice boxes -->
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif   box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md: m-[2px] m-[1px]] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id=""  
+          >
+          
+          </button>
+          
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id=""  
+          >
+           
+          </button>
+          <!-- // choice boxes -->
+
+        <!-- selection box -->
+      </div>
+        <!-- section box 8 -->
+        <div
+          class="md:w-[32%] md:h-[32%] w-[32%] h-[32%] bg-maroonX flex justify-evenly flex-wrap flex-row content-center m-[2px] font-semibold text-4xl select"
+          id="selection-box-8" 
+        >
+          <!-- // choice boxes -->
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif   box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md: m-[2px] m-[1px]] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id=""  
+          >
+          
+          </button>
+          
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id=""  
+          >
+           
+          </button>
+          <!-- // choice boxes -->
+
+        <!-- selection box -->
+      </div>
+        <!-- section box 9 -->
+        <div
+          class="md:w-[32%] md:h-[32%] w-[32%] h-[32%] bg-maroonX flex justify-evenly flex-wrap flex-row content-center m-[2px] font-semibold text-4xl select"
+          id="selection-box-9" 
+        >
+          <!-- // choice boxes -->
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif   box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md: m-[2px] m-[1px]] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id="" 
+          >
+          
+          </button>
+
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id=""  
+          >
+          
+          </button>
+          
+          <button
+            class="md:w-[28%] md:h-[28%] w-[27%] h-[27%] bg-light-blue md:m-[2px] m-[1px] text-lg font-semibold font-serif  box"
+            id=""  
+          >
+           
+          </button>
+          <!-- // choice boxes -->
+
+        <!-- selection box -->
+      </div>
+     
+
+    <!-- selection box starts -->
+
+  </div>
+  
+  <!-- buttons starts-->
+  <div
+  class="md:w-[94%] md:h-[6%] w-[57vw] h-auto flex justify-evenly items-center flex-row md:mt-[30px] mt-[2vh]"
+  >
+
+  <a href="choice.html" class="md:w-[30%] md:h-[13%] h-auto flex justify-center items-center hidden" id="new-game">
+    <button
+    class="md:w-36 w-28 h-12 md:bg-ocean bg-paleYellow rounded-lg text-white font-serif font-medium text-xl " 
+    >
+    New Game
+  </button>
+</a>
+
+  <button
+  class="md:w-36 w-28 h-12 md:bg-ocean bg-paleYellow rounded-lg text-white font-serif font-medium text-xl"
+  id="start"
+  >
+  Start
+</button>
+<button
+class="md:w-36 w-28 h-12 md:bg-ocean bg-paleYellow rounded-lg text-white font-serif font-medium text-xl"
+id="reset" 
+>
+Reset
+</button>
+</div>
+<!-- buttons ends-->
+<!-- main game ends -->
+
+<script src="app.js" ></script>
+</body>
+</html>

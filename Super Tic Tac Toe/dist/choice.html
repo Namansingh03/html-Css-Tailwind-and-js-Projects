@@ -1,0 +1,33 @@
+<!-- npx tailwindcss -i ./src/choice.css -o ./dist/choice_style.css --watch -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Tic Tac Toe</title>
+    <link rel="stylesheet" href="choice_style.css">
+</head>
+<body class=" w-screen h-screen flex content-center justify-col flex-wrap justify-center bg-slate-500 bg-cover bg-no-repeat bg-background-img">
+
+    <div class="md:h-[64vh] md:w-[60vw] h-[60vh] flex items-center justify-center flex-col border-[15px] border-paleYellow rounded-lg bg-white bg-opacity-[36%]">
+
+        <h1 class="md:text-7xl text-4xl font-sans text-maroonX font-bold m-[5vh]">Choose Your Option</h1>
+
+        <div class="flex flex-row items-center justify-evenly md:w-[38vw] md:h-[17vh]  m-[5vh]">
+            <button class="md:text-[16vh] text-[12vh] mr-[46px] font-sans hover:scale-110 text-maroonX font-bold hover:text-paleYellow " id="choice-btn-1" onclick="giveValue(false)">X</button>
+
+            <button class=" md:text-[16vh] text-[12vh] text-maroonX font-sans hover:scale-110 font-bold hover:text-paleYellow " id="choice-btn-2" onclick="giveValue(true)" >O</button>
+        </div>
+
+
+        <a href="index.html" class="md:w-[30%] md:h-[13%] h-auto flex justify-center items-center "> 
+            <button class="md:w-[50%] md:h-[85%] w-[19vw] h-[8vh] bg-maroonX text-white text-2xl rounded-lg md:m-[2vh] ml-[2%] hover:bg-ocean hover:text-black items-center justify-center hidden " id="play-btn">
+                Play
+            </button>
+        </a>
+        
+    </div>
+    <script src="choice.js" ></script>
+    <script src="app.js" ></script>
+    </body>
+</html>
