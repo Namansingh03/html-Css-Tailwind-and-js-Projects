@@ -5,6 +5,7 @@ const newGame = document.querySelector("#new-game");
 const reset = document.querySelector("#reset");
 const start = document.querySelector("#start");
 const boxes = document.querySelectorAll(".box");
+const mainGame = document.getElementById('main-game');
 
 //* selections
 
@@ -30,7 +31,7 @@ function createRandomPicker() {
   const randomIndex = Math.floor(Math.random() * numbersArray.length);
   const randomNumber = numbersArray.splice(randomIndex, 1)[0];
   return randomNumber;
-}
+};
 //?random value generator
 
 //* selecting a random section
@@ -47,6 +48,7 @@ const winPatterns = [
   [6, 7, 8],
 ];
 
+
 start.addEventListener("click", () => {
   console.log("hello");
   start.classList.add("hidden");
@@ -54,9 +56,12 @@ start.addEventListener("click", () => {
   giveId();
 });
 
-boxes.forEach((box) => {
-  box.disabled = true;
-});
+function disableBox(){
+  boxes.forEach((box) => {
+    box.disabled = true;
+  });
+};
+disableBox();
 
 function giveId() {
   let num = createRandomPicker();
@@ -74,7 +79,7 @@ function giveId() {
   boxes.forEach((box) => {
     for (let box of boxes) {
       box.disabled = false;
-    }
+    };
 
     box.addEventListener("click", () => {
       if (turn == "true") {
@@ -95,8 +100,9 @@ function giveId() {
           showDraw(section);
           giveId();
           console.log("draw");
-        }
-      }
+        };
+      };
+
       function checkWinner(section) {
         const division = section;
         const buttons = division.querySelectorAll("button");
@@ -128,7 +134,7 @@ function giveId() {
     division.innerText = "Draw";
     checkBoxWinner();
   };
-}
+};
 
 reset.addEventListener("click", () => {
   location.reload();
@@ -148,17 +154,16 @@ function checkBoxWinner() {
       }
     }
   }
-}
+};
 
 function showBoxWinner(winner) {
   const win2 = winner;
   msg.innerText = "congratulation " + win2 + " is the winner";
-  msg.classList.remove("hidden");
-}
+  mainGame.classList.add('hidden');
+};
 
 function showBoxDraw() {
   msg.innerText = "its a Draw";
-  msg.classList.remove("hidden");
-}
+  mainGame.classList.add('hidden');
+};
 
-//! small box ending always draw and also is winner true so giveId() get called two times
