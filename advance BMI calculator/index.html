@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advance BMI calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="BMI-section">
+      <h1>Advance BMI Calculator</h1>
+
+      <div class="inputs">
+        <label for="height"
+          >Height
+          <input type="number" placeholder="Height in Cm" id="height" />
+        </label>
+
+        <label for="weight"
+          >Weight
+          <input type="number" placeholder="Weight in kg" id="weight" />
+        </label>
+
+        <button class="submit" id="btn" onclick="showNum()">Submit</button>
+      </div>
+
+      <div class="output">
+        <label for="BMI"
+          >BMI
+          <input
+            type="number"
+            placeholder="Update BMi"
+            class="bmi"
+            id="BMI"
+          />
+        </label>
+      </div>
+
+      <div class="new-bmi">
+        <h1>Calculate Your Weight Loss</h1>
+        <div>
+            <label for="updated-bmi">Update BMI
+                <input type="number" id="updated-bmi" placeholder="Update your BMi"/>
+            </label>
+            <button class="updated">Submit</button>
+        </div>
+        <label for="weightLoss"
+          >New Weight
+          <input type="number" placeholder="Weight to lose" id="weightLoss" />
+        </label>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
