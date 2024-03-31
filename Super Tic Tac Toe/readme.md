@@ -12,4 +12,7 @@
 
 ![background image](./image/bg-image.jpg)
 ![backgroung for game](./image/game-img.jpg)
+![welcome page](./image/welcome%20page.jpg)
+![Choice page](./image/choice%20page.jpg)
+![Game](./image/game%20.jpg)
 >>>>>>> 59dbdea3255d1e5dbb45e5fc972ab77d37e98c39
