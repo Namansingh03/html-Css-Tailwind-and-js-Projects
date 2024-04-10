@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-image: url("Blue\ Foggy\ Mountain\ and\ Forest\ Nature\ Landscape\ Stock\ Vector\ -\ Illustration\ of\ light\,\ environment_\ 133012229.jpg");
+  background-size: cover;
+  background-position: centre;
+}
+
+.navbar {
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h1 {
+  color: #023047;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.links ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.links ul li {
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  font: bold;
+}
+
+.links ul li:hover {
+  background-color: #023047;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 20px;
+  font: bolder;
+  color: white;
+}
+
+.action_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #fb8500;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  transition: .2s ease-out;
+}
+
+.action_btn:hover{
+    transform: scale(1.1);
+}
+
+.toggle_btn {
+  display: none;
+}
+
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 6rem;
+  height: 0;
+  top: 3rem;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 33vh;
+}
+
+.dropdown_menu ul {
+  height: 35vh;
+  width: 30vw;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.dropdown_menu ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+}
+
+.dropdown_menu ul li:hover {
+  background-color: #fb8500;
+  border-radius: 10px;
+  color: white;
+}
+
+@media (max-width: 979px) {
+  .links,
+  .action_btn {
+    display: none;
+  }
+
+  .toggle_btn {
+    display: block;
+  }
+
+  .dropdown_menu{
+    display: block;
+  }
+}
