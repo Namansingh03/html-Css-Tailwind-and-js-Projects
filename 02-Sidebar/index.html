@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+  <title>Sidebar</title>
+</head>
+<body>
+  <aside class="sidebar ">
+    <section id="upper">
+      <div class="logo">
+        <i class="fa-solid fa-bars" id="logo-badge"></i>
+      <span class="logo_name">Untitled</span>
+     </div>
+   
+      <ul>
+        <li><a href="#">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span>
+        </a>
+      </li>
+        <li><a href="#">
+          <i class="fa-solid fa-table-columns"></i>
+          <span>Dashboard</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fa-solid fa-diagram-project"></i>
+          <span>Projects</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fa-solid fa-list-check"></i>
+          <span>Task</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fa-brands fa-github"></i>
+          <span>Repository</span>
+        </a></li>
+      </ul>
+
+  </section>
+
+  <section id="lower">
+    <ul>
+      <li><a href="#">
+        <i class="fa-solid fa-bell"></i>
+        <span>Notification</span>
+      </a></li>
+      <li><a href="#">
+        <i class="fa-solid fa-question"></i>
+        <span>Support</span>
+      </a></li>
+      <li><a href="#">
+        <i class="fa-solid fa-gear"></i>
+        <span>Settings</span>
+      </a></li>
+    </ul>
+    <div class="profile">
+      <i class="fa-solid fa-circle-user"></i>
+      <span>User name
+        <p>exapmle8790@gamil.com</p>
+      </span>
+    </div>
+  </section>
+
+  </aside>
+
+  <script>
+    let sidebar = document.querySelector('.sidebar');
+    let toggleBtn = document.querySelector('#logo-badge');
+
+    toggleBtn.addEventListener('click' , ()=> {
+      console.log("hello");
+      sidebar.classList.toggle('close');
+    })
+
+  </script>
+</body>
+</html>

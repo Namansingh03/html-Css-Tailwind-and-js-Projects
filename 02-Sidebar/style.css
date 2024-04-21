@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+  margin: 0;
+  padding: 3px;
+  font-family: "Roboto Mono", monospace;
+}
+
+body{
+  background-color: #8187dc;
+}
+
+.sidebar{
+  background-color: #04052e;
+  width: 21vw;
+  height: 97vh;
+  border-radius: 0px 10px 10px 0px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+
+.logo{
+  margin: 15px;
+}
+
+.logo i{
+  font-size: 30px;
+  color: #fff; 
+  margin-right: 3vw;
+}
+
+.logo span{
+  font-size: 30px;
+  color: #fff; 
+  font-weight: 600;
+}
+
+.upper ul li .show{
+  background-color: #8187dc;
+}
+
+#upper ul li a{
+  text-decoration: none;
+}
+
+#upper ul li{
+  position: relative;
+  list-style: none;
+  font-size: 3vh;
+  margin: 10px;
+  padding: 5px;
+
+}
+
+#upper ul li i , #upper ul li span{
+  color: #b1aeae;
+}
+
+#upper ul li span:hover {
+  color: #fc72e7;
+}
+
+section{
+  width: 100%;
+  padding: 5px;
+}
+
+#lower ul li a{
+  text-decoration: none;
+}
+
+#lower ul li{
+  position: relative;
+  list-style: none;
+  margin: 10px;
+}
+
+#lower ul li i , #lower ul li span{
+  color: #b1aeae;
+  margin: 5px;
+}
+
+#lower ul li span:hover {
+  color: #fc72e7;
+}
+
+.profile{
+  width: calc(100% - 20px);
+  display: flex;
+  gap: 25px;
+  margin-top: 5px;
+  margin-left: 5px;
+  background-color: #080948;
+  padding: 5px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.profile i{
+  font-size: 35px;
+  color: #b1aeae;
+}
+
+.profile span{
+  font-size: 18px;
+    font-weight: 800;
+    color: #b1aeae;
+}
+
+.profile span p{
+  font-size: 11px;
+}
+
+.sidebar.close span{
+  display: none;
+  padding: 5px;
+  position: relative;
+  left: 57px;
+  color: white;
+  top: -28px;
+  background-color: beige;
+  border-radius: 10px;
+}
+.sidebar.close{
+ width: 5vw;
+}
+
