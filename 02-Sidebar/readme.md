@@ -17,4 +17,4 @@ JavaScript: Used for adding interactive behavior to the sidebar, such as togglin
 </p>
 
 ![preview](Screenshot%202024-04-21%20190310.jpg)
-![preview](/Screenshot%202024-04-21%20190400.jpg)
+![preview](Screenshot%202024-04-21%20190400.jpg)
