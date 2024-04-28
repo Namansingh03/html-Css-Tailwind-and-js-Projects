@@ -1,0 +1,71 @@
+<!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>landing page</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-teal-900">
+    <header
+      class="w-full h-auto p-3 flex items-center justify-around bg-teal-950"
+    >
+      <h1 class="text-4xl text-orange-500 font-bold mr-3">Logo</h1>
+      <ul class="flex gap-6 text-white text-lg font-medium">
+        <li class="hover:text-orange-400"><a href="#">Home</a></li>
+        <li class="hover:text-orange-400"><a href="#">Services</a></li>
+        <li class="hover:text-orange-400"><a href="#">About</a></li>
+        <li class="hover:text-orange-400"><a href="#">Contact</a></li>
+      </ul>
+      <div id="signUp">
+        <h3 class="text-teal-500 text-lg font-semibold">
+          <a href="#" class="hover:text-orange-500">signup</a>
+          /
+          <a href="#" class="hover:text-orange-500">signin</a>
+        </h3>
+      </div>
+    </header>
+
+    <aside class="w-[50%] h-[92%] p-4 fixed">
+      <h1 class="text-6xl text-teal-300 font-bold fixed top-[20%] left-[4%]">
+        WELCOME
+      </h1>
+      <h1 class="text-orange-700 relative top-[9.5%] left-[51%] text-6xl">.</h1>
+      <h3
+        class="text-7xl w-[92%] h-[51%] p-2 text-orange-300 font-bold relative top-[15%] left-[5%]"
+      >
+        Finding The Best designs for your landing page
+      </h3>
+      <button
+        class="bg-teal-950 relative p-3 pr-2 pl-2 text-2xl text-white rounded-lg top-[6%] left-[6%] w-[30%] hover:bg-orange-500 hover:text-black"
+      >
+        Click me
+        <i class="fa-solid fa-arrow-right relative top-[2px] left-2"></i>
+      </button>
+
+      <p
+        class="text-slate-500 relative top-[10%] left-[6%] w-[70%] h-auto p-2 text-lg"
+      >
+        A landing page is a standalone web page designed specifically for
+        marketing or advertising campaigns.
+      </p>
+    </aside>
+    <section
+      class="w-[50%] h-[92%] p-4 fixed left-[50%] top-[9.3%]"
+    >
+   <img src="sapiens.png" alt="" class="relative">
+   <div class="relative bg-orange-700 rounded-lg p-3 h-[8%] w-[20%] bottom-[85%] left-[18%] text-3xl text-white flex items-center justify-center border-teal-950 border-2 animate-bounce">sapiens</div>
+   <div class="relative bg-orange-700 rounded-lg p-3 h-[8%] w-[20%] bottom-[68%] left-[68%] text-3xl text-white flex items-center justify-center border-teal-950 border-2 animate-bounce">flow</div>
+   <div class="relative bg-orange-700 rounded-lg p-3 h-[8%] w-[20%] bottom-[38%] text-3xl text-white flex items-center justify-center border-teal-950 border-2 animate-bounce">world</div>
+</section>
+  </body>
+</html>
